@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charts</title>
+</head>
+
+<body>
+    <main class="main">
+        <section class="main__card">
+            <div class="card__header">
+                <p class="my-balance">My balance</p>
+                <p class="balance__amount"></p>
+                <svg class="logo" width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none" fill-rule="evenodd">
+                        <circle fill="#382314" cx="48" cy="24" r="24" />
+                        <circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23" />
+                    </g>
+                </svg>
+            </div>
+            <div class="card__body">
+                <p>Spending - Last 7 days </p>
+                <span class="card__charts"></span>
+                <canvas id="myChart" width="400" height="400"></canvas>
+            </div>
+            <div class="card__footer">
+                <span class="total">
+                    <p class="total__text">Total this month</p>
+                    <p class="total__value"></p>
+                </span>
+                <span class="stats">
+                    <p class="total__percentage"></p>
+                    <p class="total__time-frame"></p>
+                </span>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
+<script src="/services/chart.js"></script>
