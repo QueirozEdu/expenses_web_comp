@@ -1,0 +1,67 @@
+:root {
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+
+    font-family: 'DM Sans', sans-serif;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--cream);
+
+    height: 100vh;
+}
+.main__card {
+    width: 25vw;
+}
+
+.card__header {
+    background-color: var(--soft-red);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 30px;
+
+    border-radius: 15px;
+}
+
+.card__balance-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.my-balance {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.balance__amount {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.logo {
+    font-size: 2em;
+}
+
+.card__body {
+    background-color: var(--very-pale-orange);
+    width: 25vw;
+    height: 30vh;
+    margin-top: 20px;
+    /* padding: 15px; */
+    border-radius: 15px;
+    
+}
