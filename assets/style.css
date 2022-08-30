@@ -20,7 +20,8 @@
     height: 100vh;
 }
 .main__card {
-    width: 25vw;
+    width: 60vw;
+    max-width: 500px;
 }
 
 .card__header {
@@ -58,10 +59,28 @@
 
 .card__body {
     background-color: var(--very-pale-orange);
-    width: 25vw;
-    height: 30vh;
+    width: 60vw;
+    max-width: 500px;
+    height: 45vh;
     margin-top: 20px;
-    /* padding: 15px; */
     border-radius: 15px;
-    
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card__body-title {
+    padding: 20px 0 10px 40px;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.card__charts {
+    width: 95%;
+    height: 65%;
+    align-self: center;
+
+    border: 1px solid black;
 }
