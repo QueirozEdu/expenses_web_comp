@@ -110,6 +110,10 @@
     background-color: hsla(10, 79%, 65%, 0.479);
     cursor: pointer;
 }
+.chart__day:hover .day__amount{
+    background-color: var(--dark-brown);
+    color: var(--very-pale-orange);
+}
 
 .chart__bar:active {
     background-color: var(--cyan);
@@ -120,11 +124,12 @@
 }
 
 .day__amount {
-    background-color: var(--dark-brown);
-    color: var(--very-pale-orange);
-    position: relative;
+    background-color: transparent;
+    color: transparent;
     margin-bottom: 10px;
     border-radius: 5px;
     padding: 5px;
     font-size: 0.8em;
+    transition: all 0.3s;
+
 }
