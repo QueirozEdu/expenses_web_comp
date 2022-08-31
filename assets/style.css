@@ -131,5 +131,41 @@
     padding: 5px;
     font-size: 0.8em;
     transition: all 0.3s;
+}
 
+.total {
+    padding: 15px 0 20px 30px;
+    color: var(--medium-brown);
+    
+}
+
+.total__text {
+    padding-bottom: 5px;
+}
+.total__value {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--dark-brown);
+}
+
+.card__footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 25px;
+}
+
+.total__percentage {
+    color: var(--dark-brown);
+    font-weight: 700;
+}
+
+.total__time-frame {
+    color: var(--medium-brown);
 }
