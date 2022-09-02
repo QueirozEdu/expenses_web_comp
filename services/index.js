@@ -17,4 +17,19 @@ async function showData() {
 
 }
 
+async function changeBar() {
+    let newData = await getData();
+
+    document.getElementById("mon__chart-bar").style.setProperty('height', newData["mon"].concat("px")); 
+    document.getElementById("tue__chart-bar").style.setProperty('height', newData["tue"].concat("px"));
+    document.getElementById("wed__chart-bar").style.setProperty('height', newData["wed"].concat("px"));
+    document.getElementById("thu__chart-bar").style.setProperty('height', newData["thu"].concat("px"));
+    document.getElementById("fri__chart-bar").style.setProperty('height', newData["fri"].concat("px"));
+    document.getElementById("sat__chart-bar").style.setProperty('height', newData["sat"].concat("px"));
+    document.getElementById("sun__chart-bar").style.setProperty('height', newData["sun"].concat("px"));
+
+}
+
+changeBar();
+
 showData();
